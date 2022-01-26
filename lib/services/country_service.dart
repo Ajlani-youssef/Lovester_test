@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../config.dart';
 import '../models/country.dart';
 
-class CountryApi {
+class CountryService {
   static Future<List<Country>> getCountries() async {
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {

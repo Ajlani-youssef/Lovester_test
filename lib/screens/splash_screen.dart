@@ -5,6 +5,8 @@ import '../controllers/splash_screen_controller.dart';
 import '../config.dart';
 
 class SplashScreen extends StatelessWidget {
+  final SplashScreenController controller = SplashScreenController();
+
   SplashScreen({Key? key}) : super(key: key) {
     SplashScreenController.waitAndNavigate();
   }

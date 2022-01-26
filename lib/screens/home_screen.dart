@@ -1,4 +1,4 @@
-import 'package:flag/flag.dart';
+import 'package:circle_flags/circle_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
@@ -26,12 +26,9 @@ class HomeScreen extends StatelessWidget {
                           SizedBox(
                             width: width * 0.1,
                           ),
-                          Flag.fromString(
+                          CircleFlag(
                             provider.initialCountry!.iso1,
-                            borderRadius: 10,
-                            fit: BoxFit.fill,
-                            height: width * 0.15,
-                            width: width * 0.2,
+                            size: 60,
                           ),
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(

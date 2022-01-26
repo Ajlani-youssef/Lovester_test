@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import '../controllers/splash_screen_controller.dart';
 
 import '../config.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({Key? key}) : super(key: key) {
-    Future.delayed(
-      const Duration(seconds: 2),
-      () {
-        print("hi");
-      },
-    );
+    SplashScreenController.waitAndNavigate();
   }
 
   @override
